@@ -1,0 +1,6 @@
+[project]
+name = "ie500618-assignment-3-fashion-mnist-fashion-classification"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.15"
+dependencies = []
