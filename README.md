@@ -18,46 +18,47 @@ Choose **Option A** (recommended) if you have `uv` installed, or **Option B** to
 #### Option A: Using uv
 ```bash
 # Clone the repository
-git clone git@github.com:Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git && cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
+git clone https://github.com/Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git
+cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
 
-# Create venv, lock, and install all dependencies in one step
+# Create the environment and install project dependencies, including JupyterLab
 uv sync
 ```
 
 #### Option B: Without uv
 ```bash
 # Clone the repository
-git clone git@github.com:Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git && cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
+git clone https://github.com/Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git
+cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
 
 # Create and activate a standard virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 
-# Install dependencies from the generated requirements file
+# Install dependencies, including JupyterLab and the Python notebook kernel
 pip install -r requirements.txt
-
-# Install JupyterLab manually (since it's not a core project dependency)
-pip install jupyterlab
 ```
 
 ### 3. Run the Project
 
 * **If using uv:**
   ```bash
-  uv run --with jupyter jupyter lab
+  uv run jupyter lab
   ```
 * **If using standard Python (with your activated environment):**
   ```bash
   jupyter lab
   ```
 
+In the JupyterLab browser tab, open `ASSIGNMENT.ipynb`.
+
 ## 📦 Project Structure
 
 ```text
-├── .python-version/  # Pinned python version (used by uv)
-├── ASSIGNMENT.ipynb  # Main jupyter notebook for assignement
+├── .python-version   # Pinned Python version (used by uv)
+├── ASSIGNMENT.ipynb  # Main Jupyter notebook for the assignment
 ├── pyproject.toml    # Project metadata and core dependencies
-├── requirements.txt  # Depencies for pip (export of uv dependencies)
+├── requirements.txt  # Dependencies for pip (export of uv dependencies)
 ├── uv.lock           # Pinned dependency lockfile
 └── README.md         # This file
 ```
