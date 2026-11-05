@@ -1,5 +1,7 @@
 # Assignment 3 Fashion MNIST Fashion classification
 
+Building and comparing simple neural networks by testing hyperparameter variations.
+The projects uses the [Fashion-MNIST dataset](https://keras.io/api/datasets/fashion_mnist/) containing 28 × 28 grayscale images in 10 clothing categories.
 
 ## 🚀 Quick Start
 
@@ -7,12 +9,13 @@ This project uses [uv](https://github.com) for fast, reliable Python dependency 
 
 ### 1. Prerequisites
 - **uv** (optional) - [Install uv](https://docs.astral.sh/uv/)
+- **Python** (version 3.13) - [Download Python](https://www.python.org/downloads/)
 
 ### 2. Setup Environment
 
-Choose **Option A** (recommended for speed) if you have `uv` installed, or **Option B** to use standard Python tools.
+Choose **Option A** (recommended) if you have `uv` installed, or **Option B** to use standard Python tools.
 
-#### Option A: Using uv (Fastest)
+#### Option A: Using uv
 ```bash
 # Clone the repository
 git clone git@github.com:Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git && cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
@@ -21,7 +24,7 @@ git clone git@github.com:Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashio
 uv sync
 ```
 
-#### Option B: Without uv (Standard Python)
+#### Option B: Without uv
 ```bash
 # Clone the repository
 git clone git@github.com:Elias-Chairi/IE500618-Assignment-3-Fashion-MNIST-Fashion-classification.git && cd IE500618-Assignment-3-Fashion-MNIST-Fashion-classification
@@ -51,23 +54,19 @@ pip install jupyterlab
 ## 📦 Project Structure
 
 ```text
-├── .python-version/       # Pinned python version
-├── notebooks/             # Jupyter notebooks for analysis and prototyping
-│   ├── 01_exploration.ipynb
-│   └── 02_modeling.ipynb
-├── pyproject.toml         # Project metadata and core dependencies
-├── uv.lock                # Pinned dependency lockfile
-└── README.md              # This file
+├── .python-version/  # Pinned python version (used by uv)
+├── ASSIGNMENT.ipynb  # Main jupyter notebook for assignement
+├── pyproject.toml    # Project metadata and core dependencies
+├── uv.lock           # Pinned dependency lockfile
+└── README.md         # This file
 ```
 
 ## 🛠️ Main Dependencies
 
 The core toolkit used in this project includes:
 * **Data Manipulation:** `pandas`, `numpy`
-* **Visualization:** `matplotlib`, `seaborn`
-* **Modeling:** `scikit-learn`
-
-*(Optional: All dependencies and strict versioning are handled automatically inside `pyproject.toml` and `uv.lock`.)*
+* **Visualization:** `matplotlib`
+* **Modeling:** `scikit-learn`, `tensorflow`
 
 ## 👥 Authors
 
