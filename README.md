@@ -57,6 +57,7 @@ pip install jupyterlab
 ├── .python-version/  # Pinned python version (used by uv)
 ├── ASSIGNMENT.ipynb  # Main jupyter notebook for assignement
 ├── pyproject.toml    # Project metadata and core dependencies
+├── requirements.txt  # Depencies for pip (export of uv dependencies)
 ├── uv.lock           # Pinned dependency lockfile
 └── README.md         # This file
 ```
