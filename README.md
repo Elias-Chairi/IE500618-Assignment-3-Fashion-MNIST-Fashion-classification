@@ -1,7 +1,7 @@
 # Assignment 3 Fashion MNIST Fashion classification
 
 Building and comparing simple neural networks by testing hyperparameter variations.
-The projects uses the [Fashion-MNIST dataset](https://keras.io/api/datasets/fashion_mnist/) containing 28 × 28 grayscale images in 10 clothing categories.
+The project uses the [Fashion-MNIST dataset](https://keras.io/api/datasets/fashion_mnist/) containing 28 × 28 grayscale images in 10 clothing categories.
 
 ## 🚀 Quick Start
 
